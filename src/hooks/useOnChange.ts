@@ -6,7 +6,7 @@ type OnChangeTypes = {
 };
 
 const useOnChange = (): OnChangeTypes => {
-  const [value, setValue] = useState('Yerevan');
+  const [value, setValue] = useState('');
 
   const onChange = (e: any) => setValue(e.target.value)
 
