@@ -28,7 +28,7 @@ export const filterByCurrentDate = (current, dataArray) => {
 
 export const tempConverter = (temp = 273, unit = 'Celsius') => {
     const cel = Math.round(temp - 273) || 0
-    return unit = 'Celsius' ? `${cel}°C` : `${Math.round(cel * (5 / 9) + 32)}°F
+    return unit === 'Celsius' ? `${cel}°C` : `${Math.round(cel * (5 / 9) + 32)}°F
 `
 }
 export const generateIcon = (icon = '') => {
